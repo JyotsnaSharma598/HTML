@@ -11,12 +11,28 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <style>
-        .header {
+         .header {
+          position: relative;
           background-image: url("banner.jpg");
           background-size: cover;
           background-position: center center;
           
         }
+        
+    .header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("image.jpg");
+      background-size: cover;
+      background-position: center center;
+      opacity: 0.5; /* Adjust the opacity as desired */
+      background-color: rgba(0, 0, 0, 0.5); /* Adjust the background color as desired */
+    }
+     
     </style>
     <body id="page-top">
     <!-- Header-->
@@ -40,9 +56,8 @@
                                   <div class="card" style="width: 18rem;">
                                       <img src="" class="card-img-top" alt="...">
                                       <div class="card-body">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                                        <h5 class="card-title">Question 1</h5>
+                                        <p class="card-text">What is the result of applying the Caesar cipher with a shift of 3 to the message "HELLO"?</p>
                                       </div>
                                     </div>
                                 </div>
